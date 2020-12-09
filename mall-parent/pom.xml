@@ -16,6 +16,7 @@
         <module>mall-api</module>
         <module>web-util</module>
         <module>service-util</module>
+        <module>renren-fast</module>
     </modules>
     <packaging>pom</packaging>
 

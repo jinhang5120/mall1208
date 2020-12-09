@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" filepath="$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" filepath="$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mall1208.iml" filepath="$PROJECT_DIR$/.idea/mall1208.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/renren-fast/renren-fast.iml" filepath="$PROJECT_DIR$/mall-parent/renren-fast/renren-fast.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/service-util/service-util.iml" filepath="$PROJECT_DIR$/mall-parent/service-util/service-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/web-util/web-util.iml" filepath="$PROJECT_DIR$/mall-parent/web-util/web-util.iml" />
     </modules>
