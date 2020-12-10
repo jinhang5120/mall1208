@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-api/mall-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-api/mall-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-coupon/mall-coupon.iml" filepath="$PROJECT_DIR$/mall-parent/mall-coupon/mall-coupon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway.iml" filepath="$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-member/mall-member.iml" filepath="$PROJECT_DIR$/mall-parent/mall-member/mall-member.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" filepath="$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-parent.iml" filepath="$PROJECT_DIR$/mall-parent/mall-parent.iml" />
@@ -11,8 +12,10 @@
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" filepath="$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mall1208.iml" filepath="$PROJECT_DIR$/.idea/mall1208.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/renren-fast/renren-fast.iml" filepath="$PROJECT_DIR$/mall-parent/renren-fast/renren-fast.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-parent/service-util/service-util.iml" filepath="$PROJECT_DIR$/mall-parent/service-util/service-util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-parent/web-util/web-util.iml" filepath="$PROJECT_DIR$/mall-parent/web-util/web-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/renren-generator/renren-generator.iml" filepath="$PROJECT_DIR$/mall-parent/renren-generator/renren-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/util-common/util-common.iml" filepath="$PROJECT_DIR$/mall-parent/util-common/util-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/util-service/util-service.iml" filepath="$PROJECT_DIR$/mall-parent/util-service/util-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/util-web/util-web.iml" filepath="$PROJECT_DIR$/mall-parent/util-web/util-web.iml" />
     </modules>
   </component>
 </project>

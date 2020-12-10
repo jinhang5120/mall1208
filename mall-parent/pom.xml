@@ -14,10 +14,12 @@
         <module>mall-member</module>
         <module>mall-coupon</module>
         <module>mall-api</module>
-        <module>web-util</module>
-        <module>service-util</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
+        <module>mall-gateway</module>
+        <module>util-common</module>
+        <module>util-web</module>
+        <module>util-service</module>
     </modules>
     <packaging>pom</packaging>
 

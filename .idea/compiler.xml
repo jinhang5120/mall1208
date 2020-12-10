@@ -7,28 +7,34 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="util-common" />
+        <module name="util-service" />
         <module name="mall-coupon" />
         <module name="mall-ware" />
-        <module name="web-util" />
+        <module name="util-web" />
         <module name="renren-fast" />
         <module name="mall-order" />
-        <module name="service-util" />
         <module name="mall-product" />
         <module name="mall-api" />
         <module name="mall-member" />
+        <module name="renren-generator" />
+        <module name="mall-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mall-api" target="1.8" />
       <module name="mall-coupon" target="1.8" />
+      <module name="mall-gateway" target="1.8" />
       <module name="mall-member" target="1.8" />
       <module name="mall-order" target="1.8" />
       <module name="mall-parent" target="1.8" />
       <module name="mall-product" target="1.8" />
       <module name="mall-ware" target="1.8" />
       <module name="renren-fast" target="1.8" />
-      <module name="service-util" target="1.8" />
-      <module name="web-util" target="1.8" />
+      <module name="renren-generator" target="1.8" />
+      <module name="util-common" target="1.8" />
+      <module name="util-service" target="1.8" />
+      <module name="util-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

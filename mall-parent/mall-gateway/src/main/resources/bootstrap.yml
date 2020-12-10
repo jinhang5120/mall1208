@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: mall-gateway #微服务名很重要，注册中心注册的微服务名称，也是配置中心默认配置文件名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 #注册中心地址
+      config:
+        server-addr: 127.0.0.1:8848 #配置中心地址
+        namespace: 9dd5140d-6fbd-4c3e-9a2d-bf9f6864e574 #以整体项目为单位的命名空间
+        file-extension: yaml #指定yaml格式配置,注意不是yml
+        group: dev
+        extension-configs[0]:
+          data-id: routes.yaml      #路由配置从配置中心取值
+          group: dev                #指定分组，分为dev test prod,研发、测试、生产
+          refresh: true             #开启动态刷新
+#到配置中心找路由规则，文件如下
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: route1
+#          uri: https://www.baidu.com
+#          predicates:
+#            - Query=url,baidu
+#        - id: route2
+#          uri: https://www.qq.com
+#          predicates:
+#            - Query=url,qq
