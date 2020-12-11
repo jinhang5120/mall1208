@@ -22,8 +22,37 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48607179-88de-4073-afe0-375c87da31fe" name="Default Changelist" comment="1210.1">
+    <list default="true" id="48607179-88de-4073-afe0-375c87da31fe" name="Default Changelist" comment="1211.1">
+      <change afterPath="$PROJECT_DIR$/hs_err_pid114252.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-parent/util-distribution/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-parent/util-distribution/util-distribution.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-api/mall-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-api/mall-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-coupon/mall-coupon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-coupon/mall-coupon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-coupon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-coupon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-member/mall-member.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-member/mall-member.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-member/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-member/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/entity/PmsCategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/entity/PmsCategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-ware/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-ware/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/renren-fast/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/renren-fast/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/renren-fast/src/main/java/io/renren/RenrenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/renren-fast/src/main/java/io/renren/RenRenFastMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/renren-fast/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/renren-fast/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/renren-generator/src/main/java/io/renren/RenrenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/renren-generator/src/main/java/io/renren/RenRenGeneratorMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/util-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/util-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/util-common/util-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/util-common/util-common.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +93,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -92,15 +122,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.GateWayMain">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,59 +159,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mall-member" />
+    <configuration name="RenRenFastMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="renren-fast" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jh.mall.member.*" />
+          <option name="PATTERN" value="io.renren.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jh.mall.member.MemberMain" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenRenFastMain" />
+      <option name="VM_PARAMETERS" value="-XX:ReservedCodeCacheSize=480M" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mall-order" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jh.mall.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jh.mall.order.OrderMain" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RenrenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="RenRenGeneratorMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="renren-generator" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenRenGeneratorMain" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WareMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mall-ware" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jh.mall.ware.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jh.mall.ware.WareMain" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.RenRenGeneratorMain" />
+      <item itemvalue="Spring Boot.CouponMain" />
+      <item itemvalue="Spring Boot.GateWayMain" />
+      <item itemvalue="Spring Boot.RenRenFastMain" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.GateWayMain" />
+        <item itemvalue="Spring Boot.RenRenFastMain" />
         <item itemvalue="Spring Boot.CouponMain" />
-        <item itemvalue="Spring Boot.MemberMain" />
-        <item itemvalue="Spring Boot.WareMain" />
-        <item itemvalue="Spring Boot.OrderMain" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +216,11 @@
       <workItem from="1607580149969" duration="2135000" />
       <workItem from="1607582298466" duration="852000" />
       <workItem from="1607583157139" duration="3323000" />
+      <workItem from="1607654355806" duration="12216000" />
+      <workItem from="1607674872188" duration="276000" />
+      <workItem from="1607675187826" duration="668000" />
+      <workItem from="1607676261477" duration="463000" />
+      <workItem from="1607676764211" duration="2530000" />
     </task>
     <task id="LOCAL-00001" summary="1208">
       <created>1607416868301</created>
@@ -243,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607584403058</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1211.1">
+      <created>1607654406218</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607654406218</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,17 +289,26 @@
     <MESSAGE value="1209.1" />
     <MESSAGE value="1209.2" />
     <MESSAGE value="1210.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1210.1" />
+    <MESSAGE value="1211.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1211.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="937" y="364" key="#Notifications" timestamp="1607416752346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="937" y="364" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1607416752346" />
-    <state x="440" y="97" key="#Project_Structure" timestamp="1607582041436">
+    <state x="440" y="97" key="#Project_Structure" timestamp="1607654363521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="97" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607582041436" />
+    <state x="440" y="97" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607654363521" />
+    <state x="742" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607676877204">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607676877204" />
+    <state x="1125" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1607656836726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1125" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607656836726" />
     <state x="607" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1607477059447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -287,42 +317,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="398" width="514" height="249" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1607486546901" />
+    <state x="681" y="237" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607675248788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="237" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607675248788" />
     <state x="973" y="249" key="FileChooserDialogImpl" timestamp="1607412658562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="973" y="249" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607412658562" />
-    <state width="1397" height="228" key="GridCell.Tab.0.bottom" timestamp="1607591634486">
+    <state width="915" height="285" key="GridCell.Tab.0.bottom" timestamp="1607679580497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1397" height="228" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
-    <state width="1397" height="228" key="GridCell.Tab.0.center" timestamp="1607591634486">
+    <state width="915" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607679580497" />
+    <state width="915" height="285" key="GridCell.Tab.0.center" timestamp="1607679580496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1397" height="228" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
-    <state width="1397" height="228" key="GridCell.Tab.0.left" timestamp="1607591634486">
+    <state width="915" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607679580496" />
+    <state width="915" height="285" key="GridCell.Tab.0.left" timestamp="1607679580496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1397" height="228" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
-    <state width="1397" height="228" key="GridCell.Tab.0.right" timestamp="1607591634486">
+    <state width="915" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607679580496" />
+    <state width="915" height="285" key="GridCell.Tab.0.right" timestamp="1607679580496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1397" height="228" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
-    <state width="1397" height="228" key="GridCell.Tab.1.bottom" timestamp="1607591634486">
+    <state width="915" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607679580496" />
+    <state width="915" height="285" key="GridCell.Tab.1.bottom" timestamp="1607679580497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1397" height="228" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
-    <state width="1397" height="228" key="GridCell.Tab.1.center" timestamp="1607591634486">
+    <state width="915" height="285" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607679580497" />
+    <state width="915" height="285" key="GridCell.Tab.1.center" timestamp="1607679580497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1397" height="228" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
-    <state width="1397" height="228" key="GridCell.Tab.1.left" timestamp="1607591634486">
+    <state width="915" height="285" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607679580497" />
+    <state width="915" height="285" key="GridCell.Tab.1.left" timestamp="1607679580497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1397" height="228" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
-    <state width="1397" height="228" key="GridCell.Tab.1.right" timestamp="1607591634486">
+    <state width="915" height="285" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607679580497" />
+    <state width="915" height="285" key="GridCell.Tab.1.right" timestamp="1607679580497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1397" height="228" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
+    <state width="915" height="285" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607679580497" />
     <state width="1293" height="279" key="GridCell.Tab.2.bottom" timestamp="1607501166644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -347,18 +381,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="352" y="221" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607495180174" />
-    <state x="636" y="269" key="Vcs.Push.Dialog.v2" timestamp="1607584408299">
+    <state x="636" y="269" key="Vcs.Push.Dialog.v2" timestamp="1607654408071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607584408299" />
-    <state x="997" y="274" key="new project wizard" timestamp="1607581931918">
+    <state x="636" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607654408071" />
+    <state x="997" y="274" key="new project wizard" timestamp="1607657584375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="997" y="274" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607581931918" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607498235710">
+    <state x="997" y="274" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607657584375" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607675123211">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607498235710" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607675123211" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

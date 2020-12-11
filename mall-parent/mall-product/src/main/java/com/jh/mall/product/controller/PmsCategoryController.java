@@ -1,20 +1,18 @@
 package com.jh.mall.product.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-//import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.jh.common.utils.R;
+import com.jh.mall.product.entity.PmsCategoryEntity;
+import com.jh.mall.product.service.PmsCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jh.mall.product.entity.PmsCategoryEntity;
-import com.jh.mall.product.service.PmsCategoryService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
+import java.util.Arrays;
+import java.util.List;
+
+//import org.apache.shiro.authz.annotation.RequiresPermissions;
 
 
 
@@ -32,14 +30,13 @@ public class PmsCategoryController {
     private PmsCategoryService pmsCategoryService;
 
     /**
-     * 列表
+     * 查出所有分类以及子分类，以树形结构展示
      */
-    @RequestMapping("/list")
+    @RequestMapping("/list/tree")
     //@RequiresPermissions("product:pmscategory:list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = pmsCategoryService.queryPage(params);
-
-        return R.ok().put("page", page);
+    public R list(){//以树形结构返回所有数据
+        List<PmsCategoryEntity> pmsCategoryEntities = pmsCategoryService.listWithTree();
+        return R.ok().put("pmsCategoryEntities", pmsCategoryEntities);
     }
 
 

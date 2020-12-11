@@ -20,6 +20,7 @@
         <module>util-common</module>
         <module>util-web</module>
         <module>util-service</module>
+        <module>util-distribution</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -9,15 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="util-common" />
         <module name="util-service" />
-        <module name="mall-coupon" />
         <module name="mall-ware" />
+        <module name="mall-api" />
+        <module name="renren-generator" />
+        <module name="mall-coupon" />
+        <module name="util-distribution" />
         <module name="util-web" />
         <module name="renren-fast" />
         <module name="mall-order" />
         <module name="mall-product" />
-        <module name="mall-api" />
         <module name="mall-member" />
-        <module name="renren-generator" />
         <module name="mall-gateway" />
       </profile>
     </annotationProcessing>
@@ -33,6 +34,7 @@
       <module name="renren-fast" target="1.8" />
       <module name="renren-generator" target="1.8" />
       <module name="util-common" target="1.8" />
+      <module name="util-distribution" target="1.8" />
       <module name="util-service" target="1.8" />
       <module name="util-web" target="1.8" />
     </bytecodeTargetLevel>

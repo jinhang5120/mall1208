@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/mall-parent/renren-fast/renren-fast.iml" filepath="$PROJECT_DIR$/mall-parent/renren-fast/renren-fast.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/renren-generator/renren-generator.iml" filepath="$PROJECT_DIR$/mall-parent/renren-generator/renren-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/util-common/util-common.iml" filepath="$PROJECT_DIR$/mall-parent/util-common/util-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/util-distribution/util-distribution.iml" filepath="$PROJECT_DIR$/mall-parent/util-distribution/util-distribution.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/util-service/util-service.iml" filepath="$PROJECT_DIR$/mall-parent/util-service/util-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/util-web/util-web.iml" filepath="$PROJECT_DIR$/mall-parent/util-web/util-web.iml" />
     </modules>

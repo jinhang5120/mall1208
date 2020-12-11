@@ -1,11 +1,12 @@
 package com.jh.mall.product.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
-import lombok.Data;
+import java.util.List;
 
 /**
  * 商品三级分类
@@ -56,5 +57,8 @@ public class PmsCategoryEntity implements Serializable {
 	 * 商品数量
 	 */
 	private Integer productCount;
+
+	@TableField(exist = false)//表明该数据在数据库表中不存在
+	private List<PmsCategoryEntity> children;
 
 }
