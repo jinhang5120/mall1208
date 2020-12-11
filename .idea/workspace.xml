@@ -22,36 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48607179-88de-4073-afe0-375c87da31fe" name="Default Changelist" comment="1209.2">
-      <change afterPath="$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/mall-gateway/src/main/java/com/jh/mall/GateWayMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/mall-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/mall-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/util-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/util-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/util-service/util-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="48607179-88de-4073-afe0-375c87da31fe" name="Default Changelist" comment="1210.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-api/mall-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-api/mall-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-coupon/mall-coupon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-coupon/mall-coupon.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-coupon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-coupon/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-coupon/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-coupon/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-coupon/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-coupon/src/main/resources/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-coupon/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-coupon/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-member/mall-member.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-member/mall-member.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/service-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/service-util/service-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/util-common/util-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/web-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/util-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/web-util/web-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/util-web/util-web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,13 +92,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.GateWayMain">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,7 +206,7 @@
       <workItem from="1607565171741" duration="8656000" />
       <workItem from="1607580149969" duration="2135000" />
       <workItem from="1607582298466" duration="852000" />
-      <workItem from="1607583157139" duration="1004000" />
+      <workItem from="1607583157139" duration="3323000" />
     </task>
     <task id="LOCAL-00001" summary="1208">
       <created>1607416868301</created>
@@ -262,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607508030958</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1210.1">
+      <created>1607584403057</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607584403058</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +267,8 @@
     <MESSAGE value="1208.1" />
     <MESSAGE value="1209.1" />
     <MESSAGE value="1209.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="1209.2" />
+    <MESSAGE value="1210.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1210.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="937" y="364" key="#Notifications" timestamp="1607416752346">
@@ -309,38 +291,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="973" y="249" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607412658562" />
-    <state width="1241" height="243" key="GridCell.Tab.0.bottom" timestamp="1607583150617">
+    <state width="1397" height="228" key="GridCell.Tab.0.bottom" timestamp="1607591634486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607583150617" />
-    <state width="1241" height="243" key="GridCell.Tab.0.center" timestamp="1607583150617">
+    <state width="1397" height="228" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
+    <state width="1397" height="228" key="GridCell.Tab.0.center" timestamp="1607591634486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="243" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607583150617" />
-    <state width="1241" height="243" key="GridCell.Tab.0.left" timestamp="1607583150617">
+    <state width="1397" height="228" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
+    <state width="1397" height="228" key="GridCell.Tab.0.left" timestamp="1607591634486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="243" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607583150617" />
-    <state width="1241" height="243" key="GridCell.Tab.0.right" timestamp="1607583150617">
+    <state width="1397" height="228" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
+    <state width="1397" height="228" key="GridCell.Tab.0.right" timestamp="1607591634486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="243" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607583150617" />
-    <state width="1241" height="243" key="GridCell.Tab.1.bottom" timestamp="1607583150617">
+    <state width="1397" height="228" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
+    <state width="1397" height="228" key="GridCell.Tab.1.bottom" timestamp="1607591634486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607583150617" />
-    <state width="1241" height="243" key="GridCell.Tab.1.center" timestamp="1607583150617">
+    <state width="1397" height="228" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
+    <state width="1397" height="228" key="GridCell.Tab.1.center" timestamp="1607591634486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="243" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607583150617" />
-    <state width="1241" height="243" key="GridCell.Tab.1.left" timestamp="1607583150617">
+    <state width="1397" height="228" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
+    <state width="1397" height="228" key="GridCell.Tab.1.left" timestamp="1607591634486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="243" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607583150617" />
-    <state width="1241" height="243" key="GridCell.Tab.1.right" timestamp="1607583150617">
+    <state width="1397" height="228" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
+    <state width="1397" height="228" key="GridCell.Tab.1.right" timestamp="1607591634486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="243" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607583150617" />
+    <state width="1397" height="228" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607591634486" />
     <state width="1293" height="279" key="GridCell.Tab.2.bottom" timestamp="1607501166644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -365,10 +347,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="352" y="221" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607495180174" />
-    <state x="636" y="269" key="Vcs.Push.Dialog.v2" timestamp="1607508036245">
+    <state x="636" y="269" key="Vcs.Push.Dialog.v2" timestamp="1607584408299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607508036245" />
+    <state x="636" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607584408299" />
     <state x="997" y="274" key="new project wizard" timestamp="1607581931918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
