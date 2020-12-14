@@ -32,11 +32,11 @@
             <artifactId>util-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-<!--        <dependency>
+        <dependency>
             <groupId>org.example</groupId>
             <artifactId>util-distribution</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>-->
+        </dependency>
 
 
         <dependency><!--单元测试-->

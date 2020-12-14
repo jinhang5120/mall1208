@@ -5,6 +5,7 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848 #注册中心地址
+        namespace: 9dd5140d-6fbd-4c3e-9a2d-bf9f6864e574 #声明在注册中心的命名空间
       config:
         server-addr: 127.0.0.1:8848 #配置中心地址
         namespace: 9dd5140d-6fbd-4c3e-9a2d-bf9f6864e574 #以整体项目为单位的命名空间
