@@ -15,6 +15,10 @@ spring:
           data-id: routes.yaml      #路由配置从配置中心取值
           group: dev                #指定分组，分为dev test prod,研发、测试、生产
           refresh: true             #开启动态刷新
+        extension-configs[1]:
+          data-id: OSS.yaml      #路由配置从配置中心取值
+          group: dev                #指定分组，分为dev test prod,研发、测试、生产
+          refresh: true             #开启动态刷新
 #到配置中心找路由规则，文件如下
 #spring:
 #  cloud:

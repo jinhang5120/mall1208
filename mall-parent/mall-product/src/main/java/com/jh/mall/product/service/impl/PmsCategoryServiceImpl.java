@@ -47,6 +47,13 @@ public class PmsCategoryServiceImpl extends ServiceImpl<PmsCategoryDao, PmsCateg
                 .sorted(Comparator.comparingInt(entity -> Optional.ofNullable(entity.getSort()).orElse(0)))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public void removeMenuByIds(List<Long> asList) {
+        //TODO 1.检查当前删除的菜单，是否被别的地方引用
+        baseMapper.deleteBatchIds(asList);
+    }
+
     //递归查找所有菜单的子菜单，不管几级菜单都可以查询出来
     private List<PmsCategoryEntity> getTheChildren(PmsCategoryEntity parentEntity, List<PmsCategoryEntity> all) {
         return all

@@ -69,7 +69,12 @@ public class PmsCategoryController {
     //@RequiresPermissions("product:pmscategory:update")
     public R update(@RequestBody PmsCategoryEntity pmsCategory){
 		pmsCategoryService.updateById(pmsCategory);
-
+        return R.ok();
+    }
+    @RequestMapping("/update/sort")
+    //@RequiresPermissions("product:pmscategory:update")
+    public R update(@RequestBody PmsCategoryEntity[] pmsCategory){
+		pmsCategoryService.updateBatchById(Arrays.asList(pmsCategory));
         return R.ok();
     }
 
@@ -78,10 +83,11 @@ public class PmsCategoryController {
      */
     @RequestMapping("/delete")
     //@RequiresPermissions("product:pmscategory:delete")
-    public R delete(@RequestBody Long[] catIds){
-		pmsCategoryService.removeByIds(Arrays.asList(catIds));
-
+    public R delete(@RequestBody Long[] catIds){//只有post请求有请求体，而且请求体数据必须是json数据
+//		pmsCategoryService.removeByIds(Arrays.asList(catIds));
+        //TODO 1.检查当前删除的菜单，是否被别的地方引用
+        //默认是逻辑删除
+        pmsCategoryService.removeMenuByIds(Arrays.asList(catIds));
         return R.ok();
     }
-
 }

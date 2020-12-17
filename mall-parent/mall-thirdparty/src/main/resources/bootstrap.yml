@@ -1,6 +1,6 @@
 spring:
   application:
-    name: mall-product #微服务名很重要，注册中心注册的微服务名称，也是配置中心默认配置文件名
+    name: mall-thirdparty #微服务名很重要，注册中心注册的微服务名称，也是配置中心默认配置文件名
   cloud:
     nacos:
       discovery:
@@ -15,22 +15,22 @@ spring:
         #官网要求的配置文件格式，spring.profile.active没有指定就为空
         #${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
         extension-configs[0]:
-          data-id: datasource.yaml  #数据源配置从配置中心取值
-          group: dev                #指定分组，分为dev test prod,研发、测试、生产
-          refresh: true             #开启动态刷新
-        extension-configs[1]:
-          data-id: mybatis-plus.yaml #mybatis-plus配置从配置中心取值
-          group: dev
-          refresh: true
-        extension-configs[2]:
-          data-id: other.yaml #其他某些配置
-          group: dev
-          refresh: true
-        extension-configs[3]:
-          data-id: driver.yaml #其他某些配置
-          group: dev
-          refresh: true
-        extension-configs[4]:
           data-id: OSS.yaml #其他某些配置
           group: dev
           refresh: true
+#        extension-configs[0]:
+#          data-id: datasource.yaml  #数据源配置从配置中心取值
+#          group: dev                #指定分组，分为dev test prod,研发、测试、生产
+#          refresh: true             #开启动态刷新
+#        extension-configs[1]:
+#          data-id: mybatis-plus.yaml #mybatis-plus配置从配置中心取值
+#          group: dev
+#          refresh: true
+#        extension-configs[2]:
+#          data-id: other.yaml #其他某些配置
+#          group: dev
+#          refresh: true
+#        extension-configs[3]:
+#          data-id: driver.yaml #其他某些配置
+#          group: dev
+#          refresh: true

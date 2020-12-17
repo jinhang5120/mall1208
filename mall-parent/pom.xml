@@ -21,6 +21,7 @@
         <module>util-web</module>
         <module>util-service</module>
         <module>util-distribution</module>
+        <module>mall-thirdparty</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -46,6 +47,12 @@
                 <version>2.2.1.RELEASE</version><!--2.1.0.RELEASE-->
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alicloud-oss</artifactId>
+                <version>2.2.0.RELEASE</version><!--不要配置太新的-->
             </dependency>
 
             <dependency><!--导入mysql驱动-->
