@@ -14,6 +14,17 @@
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>
+            <artifactId>mall-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.example</groupId>
+                    <artifactId>util-service</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
             <artifactId>util-web</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -21,6 +32,11 @@
             <groupId>org.example</groupId>
             <artifactId>util-distribution</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency><!--图片存储-->
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alicloud-oss</artifactId>
+            <version>2.2.0.RELEASE</version>
         </dependency>
 
         <dependency><!--单元测试-->

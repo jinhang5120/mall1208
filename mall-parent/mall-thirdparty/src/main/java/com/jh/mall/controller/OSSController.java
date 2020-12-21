@@ -4,6 +4,7 @@ import com.aliyun.oss.OSS;
 import com.aliyun.oss.common.utils.BinaryUtil;
 import com.aliyun.oss.model.MatchMode;
 import com.aliyun.oss.model.PolicyConditions;
+import com.jh.common.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -17,6 +18,7 @@ import java.util.Map;
 
 @RestController
 @RefreshScope
+@RequestMapping("thirdparty/oss")
 public class OSSController {
     @Autowired(required = false) //注意注入@Bean的返回类型是接口类型还是实体类类型
     OSS ossClient;
@@ -27,8 +29,8 @@ public class OSSController {
     @Value("${spring.cloud.alicloud.oss.endpoint}")
     String endpoint;
 
-    @RequestMapping("/oss/policy")
-    public Map policy(){
+    @RequestMapping("/policy")
+    public R policy(){
         System.out.println("ossClient = " + ossClient);
 
         String bucket = "mall1208"; // 请填写您的 bucketname 。
@@ -67,6 +69,6 @@ public class OSSController {
         } finally {
             ossClient.shutdown();
         }
-        return respMap;
+        return R.ok().put("data",respMap);//根据前台要求返回对应格式地数据
     }
 }

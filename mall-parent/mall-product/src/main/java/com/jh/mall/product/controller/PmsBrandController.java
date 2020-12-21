@@ -1,21 +1,18 @@
 package com.jh.mall.product.controller;
 
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.common.valid.AddGroup;
+import com.jh.mall.product.entity.PmsBrandEntity;
+import com.jh.mall.product.service.PmsBrandService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.product.entity.PmsBrandEntity;
-import com.jh.mall.product.service.PmsBrandService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
-
 
 
 /**
@@ -57,12 +54,20 @@ public class PmsBrandController {
     /**
      * 保存
      */
-    @RequestMapping("/save")
+    @RequestMapping("/save")//使用全局统一异常处理，自己有异常，就自动触发@RestControllerAdvice
     //@RequiresPermissions("product:pmsbrand:save")
-    public R save(@RequestBody PmsBrandEntity pmsBrand){
-		pmsBrandService.save(pmsBrand);
-
-        return R.ok();
+    //@Valid是规范，@Validated是Spring提供的注解
+    public R save(@Validated(value = AddGroup.class) @RequestBody PmsBrandEntity pmsBrand/*, BindingResult result*/){//开启校验
+//        if(result.hasErrors()){
+//            Map map = new HashMap<String,String>();
+//            result.getFieldErrors().forEach((item)->{
+//                map.put(item.getField(),item.getDefaultMessage());
+//            });
+//            return R.error(400,"数据不对").put("data",map);
+//        }else{
+            pmsBrandService.save(pmsBrand);
+            return R.ok();
+//        }
     }
 
     /**
