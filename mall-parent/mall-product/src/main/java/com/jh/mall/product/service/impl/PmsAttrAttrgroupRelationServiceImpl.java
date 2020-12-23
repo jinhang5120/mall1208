@@ -26,4 +26,9 @@ public class PmsAttrAttrgroupRelationServiceImpl extends ServiceImpl<PmsAttrAttr
         return new PageUtils(page);
     }
 
+    @Override
+    public PmsAttrAttrgroupRelationEntity selectByAttrId(Long attrId) {
+        return this.baseMapper.selectOne(new QueryWrapper<PmsAttrAttrgroupRelationEntity>().eq("attr_id",attrId));
+    }
+
 }

@@ -7,13 +7,13 @@ import com.jh.common.utils.PageUtils;
 import com.jh.common.utils.Query;
 import com.jh.mall.product.dao.PmsCategoryDao;
 import com.jh.mall.product.entity.PmsCategoryEntity;
+import com.jh.mall.product.service.PmsCategoryBrandRelationService;
 import com.jh.mall.product.service.PmsCategoryService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -52,6 +52,34 @@ public class PmsCategoryServiceImpl extends ServiceImpl<PmsCategoryDao, PmsCateg
     public void removeMenuByIds(List<Long> asList) {
         //TODO 1.检查当前删除的菜单，是否被别的地方引用
         baseMapper.deleteBatchIds(asList);
+    }
+
+    @Autowired
+    PmsCategoryBrandRelationService pmsCategoryBrandRelationService;
+    @Override
+    @Transactional
+    public void updateDetail(PmsCategoryEntity pmsCategory) {
+        this.updateById(pmsCategory);
+        pmsCategoryBrandRelationService.updateCategory(pmsCategory.getCatId(),pmsCategory.getName());
+        //TODO，修改要关联其他数据，牵一发动全身
+    }
+
+    @Override
+    public Long[] getCatelogPath(Long catId) {
+        Long[] longs = new Long[3];
+        List<Long> catelogPathList = new ArrayList<>();
+        List<PmsCategoryEntity> list = this.list();
+        while(catId!=0){
+            for (PmsCategoryEntity pmsCategoryEntity : list) {
+                if(pmsCategoryEntity.getCatId().equals(catId)){
+                    catelogPathList.add(0,catId);
+                    catId = pmsCategoryEntity.getParentCid();
+                    break;
+                }
+            }
+        }
+        longs = catelogPathList.toArray(longs);
+        return longs;
     }
 
     //递归查找所有菜单的子菜单，不管几级菜单都可以查询出来

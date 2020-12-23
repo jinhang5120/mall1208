@@ -1,20 +1,18 @@
 package com.jh.mall.product.controller;
 
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.mall.product.entity.PmsAttrEntity;
+import com.jh.mall.product.service.PmsAttrService;
+import com.jh.mall.product.vo.AttrRespVo;
+import com.jh.mall.product.vo.AttrVo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.product.entity.PmsAttrEntity;
-import com.jh.mall.product.service.PmsAttrService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
 
 
 
@@ -26,7 +24,7 @@ import com.jh.common.utils.R;
  * @date 2020-12-09 11:42:32
  */
 @RestController
-@RequestMapping("product/pmsattr")
+@RequestMapping("product/attr")
 public class PmsAttrController {
     @Autowired
     private PmsAttrService pmsAttrService;
@@ -41,7 +39,12 @@ public class PmsAttrController {
 
         return R.ok().put("page", page);
     }
-
+    @RequestMapping("/base/list/{catId}")//restful传参不能用${}
+    //@RequiresPermissions("product:pmsattr:list")
+    public R baseList(@RequestParam Map<String, Object> params,@PathVariable("catId") Long catId){
+        PageUtils page = pmsAttrService.queryPage(params,catId);
+        return R.ok().put("page", page);
+    }
 
     /**
      * 信息
@@ -49,9 +52,10 @@ public class PmsAttrController {
     @RequestMapping("/info/{attrId}")
     //@RequiresPermissions("product:pmsattr:info")
     public R info(@PathVariable("attrId") Long attrId){
-		PmsAttrEntity pmsAttr = pmsAttrService.getById(attrId);
+//		PmsAttrEntity pmsAttr = pmsAttrService.getById(attrId);
+		AttrRespVo attrRespVo = pmsAttrService.getInfoById(attrId);
 
-        return R.ok().put("pmsAttr", pmsAttr);
+        return R.ok().put("attr", attrRespVo);
     }
 
     /**
@@ -59,9 +63,9 @@ public class PmsAttrController {
      */
     @RequestMapping("/save")
     //@RequiresPermissions("product:pmsattr:save")
-    public R save(@RequestBody PmsAttrEntity pmsAttr){
-		pmsAttrService.save(pmsAttr);
-
+    public R save(@RequestBody AttrVo attrVo){
+//		pmsAttrService.save(pmsAttr);
+        pmsAttrService.saveAttrVo(attrVo);
         return R.ok();
     }
 

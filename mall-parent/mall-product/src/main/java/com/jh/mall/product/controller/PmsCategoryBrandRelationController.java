@@ -1,20 +1,17 @@
 package com.jh.mall.product.controller;
 
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.mall.product.entity.PmsCategoryBrandRelationEntity;
+import com.jh.mall.product.service.PmsCategoryBrandRelationService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.product.entity.PmsCategoryBrandRelationEntity;
-import com.jh.mall.product.service.PmsCategoryBrandRelationService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
 
 
 
@@ -26,7 +23,7 @@ import com.jh.common.utils.R;
  * @date 2020-12-09 11:42:32
  */
 @RestController
-@RequestMapping("product/pmscategorybrandrelation")
+@RequestMapping("product/categorybrandrelation")
 public class PmsCategoryBrandRelationController {
     @Autowired
     private PmsCategoryBrandRelationService pmsCategoryBrandRelationService;
@@ -40,6 +37,13 @@ public class PmsCategoryBrandRelationController {
         PageUtils page = pmsCategoryBrandRelationService.queryPage(params);
 
         return R.ok().put("page", page);
+    }
+    @GetMapping("/catelog/list")
+    //@RequiresPermissions("product:pmscategorybrandrelation:list")
+    public R list(@RequestParam("brandId") Long brandId ){
+//        PageUtils page = pmsCategoryBrandRelationService.queryPage(params);
+        List<PmsCategoryBrandRelationEntity> data = pmsCategoryBrandRelationService.selectListByBrandId(brandId);
+        return R.ok().put("data", data);
     }
 
 
@@ -60,8 +64,8 @@ public class PmsCategoryBrandRelationController {
     @RequestMapping("/save")
     //@RequiresPermissions("product:pmscategorybrandrelation:save")
     public R save(@RequestBody PmsCategoryBrandRelationEntity pmsCategoryBrandRelation){
-		pmsCategoryBrandRelationService.save(pmsCategoryBrandRelation);
-
+//		pmsCategoryBrandRelationService.save(pmsCategoryBrandRelation);
+		pmsCategoryBrandRelationService.saveDetail(pmsCategoryBrandRelation);
         return R.ok();
     }
 

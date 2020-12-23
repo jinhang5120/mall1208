@@ -16,5 +16,7 @@ import java.util.Map;
 public interface PmsAttrAttrgroupRelationService extends IService<PmsAttrAttrgroupRelationEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    PmsAttrAttrgroupRelationEntity selectByAttrId(Long attrId);
 }
 

@@ -22,31 +22,50 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48607179-88de-4073-afe0-375c87da31fe" name="Default Changelist" comment="1217.1">
-      <change afterPath="$PROJECT_DIR$/hs_err_pid240280.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/mall-api/src/main/java/com/jh/common/exception/BizCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/mall-api/src/main/java/com/jh/common/valid/AddGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/mall-api/src/main/java/com/jh/common/valid/UpdateGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/exception/MallExceptionControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replay_pid240280.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="48607179-88de-4073-afe0-375c87da31fe" name="Default Changelist" comment="1221.1">
+      <change afterPath="$PROJECT_DIR$/mall-parent/mall-api/src/main/java/com/jh/common/valid/StatusValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-parent/mall-api/src/main/java/com/jh/common/valid/StatusValueConstraintValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-parent/mall-api/src/main/java/com/jh/common/valid/UpdateStatusGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/vo/AttrRespVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/vo/AttrVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-api/mall-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-api/mall-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-coupon/mall-coupon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-coupon/mall-coupon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-member/mall-member.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-member/mall-member.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsAttrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsAttrController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsAttrGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsAttrGroupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsBrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsBrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsCategoryBrandRelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsCategoryBrandRelationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/controller/PmsCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/dao/PmsCategoryBrandRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/dao/PmsCategoryBrandRelationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/entity/PmsAttrGroupEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/entity/PmsAttrGroupEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/entity/PmsBrandEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/entity/PmsBrandEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/entity/PmsCategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/entity/PmsCategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/exception/MallExceptionControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/exception/MallExceptionControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsAttrAttrgroupRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsAttrAttrgroupRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsAttrGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsAttrGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsAttrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsAttrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsBrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsBrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsCategoryBrandRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsCategoryBrandRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/PmsCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsAttrAttrgroupRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsAttrAttrgroupRelationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsAttrGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsAttrGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsAttrServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsAttrServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsBrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsBrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsCategoryBrandRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsCategoryBrandRelationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/java/com/jh/mall/product/service/impl/PmsCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/main/resources/mapper/product/PmsCategoryBrandRelationDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/main/resources/mapper/product/PmsCategoryBrandRelationDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-product/src/test/java/com/jh/mall/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-product/src/test/java/com/jh/mall/Test01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-thirdparty/mall-thirdparty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-thirdparty/mall-thirdparty.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-thirdparty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-thirdparty/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/mall-thirdparty/src/main/java/com/jh/mall/controller/OSSController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-thirdparty/src/main/java/com/jh/mall/controller/OSSController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/util-distribution/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/util-distribution/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-parent/util-distribution/util-distribution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/util-distribution/util-distribution.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/util-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/util-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-parent/util-common/util-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-parent/util-common/util-common.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +80,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
+        <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -102,7 +122,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mall-parent/mall-product/src/main/resources/application.yml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../java/商城Sb+Sc+D+V+El/renrenio-renren-fast-vue-master/renren-fast-vue" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
@@ -123,15 +143,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ThridpartyMain">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,15 +236,15 @@
       <item itemvalue="JUnit.ThirdPartyTest.testUpload" />
       <item itemvalue="JUnit.Test01.m1" />
       <item itemvalue="Spring Boot.RenRenFastMain" />
-      <item itemvalue="Spring Boot.ThridpartyMain" />
       <item itemvalue="Spring Boot.GateWayMain" />
       <item itemvalue="Spring Boot.ProductMain" />
+      <item itemvalue="Spring Boot.ThridpartyMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ThridpartyMain" />
         <item itemvalue="Spring Boot.ProductMain" />
         <item itemvalue="Spring Boot.GateWayMain" />
-        <item itemvalue="Spring Boot.ThridpartyMain" />
         <item itemvalue="JUnit.ThirdPartyTest.testUpload" />
         <item itemvalue="JUnit.Test01.m1" />
       </list>
@@ -273,7 +291,8 @@
       <workItem from="1608174336752" duration="9743000" />
       <workItem from="1608190034959" duration="5631000" />
       <workItem from="1608272026865" duration="8894000" />
-      <workItem from="1608513030231" duration="417000" />
+      <workItem from="1608513030231" duration="23602000" />
+      <workItem from="1608625541178" duration="23055000" />
     </task>
     <task id="LOCAL-00001" summary="1208">
       <created>1607416868301</created>
@@ -338,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608185393970</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1221.1">
+      <created>1608513527980</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608513527980</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +393,8 @@
     <MESSAGE value="1211.2" />
     <MESSAGE value="1214.1" />
     <MESSAGE value="1217.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1217.1" />
+    <MESSAGE value="1221.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1221.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="594" y="0" width="746" height="1040" key="#&lt;template&gt;_of_Spring_Boot" timestamp="1608187073306">
@@ -386,18 +413,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="97" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1608189366101" />
-    <state x="486" y="202" width="1092" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608172353828">
+    <state x="486" y="202" width="1092" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608690957882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="486" y="202" width="1092" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608172353828" />
+    <state x="486" y="202" width="1092" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608690957882" />
     <state x="685" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608172027611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608172027611" />
-    <state x="1125" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1608281516592">
+    <state x="1125" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1608710381630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1125" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608281516592" />
+    <state x="1125" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608710381630" />
     <state x="607" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1607477059447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -414,42 +441,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="678" y="383" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1608168710454" />
-    <state x="468" y="244" width="719" height="564" key="FileChooserDialogImpl" timestamp="1608173845119">
+    <state x="468" y="244" width="719" height="564" key="FileChooserDialogImpl" timestamp="1608626050314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="468" y="244" width="719" height="564" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608173845119" />
-    <state width="816" height="285" key="GridCell.Tab.0.bottom" timestamp="1608512667254">
+    <state x="468" y="244" width="719" height="564" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608626050314" />
+    <state width="1330" height="238" key="GridCell.Tab.0.bottom" timestamp="1608711750108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="816" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608512667254" />
-    <state width="816" height="285" key="GridCell.Tab.0.center" timestamp="1608512667254">
+    <state width="1330" height="238" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608711750108" />
+    <state width="1330" height="238" key="GridCell.Tab.0.center" timestamp="1608711750108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="816" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608512667254" />
-    <state width="816" height="285" key="GridCell.Tab.0.left" timestamp="1608512667254">
+    <state width="1330" height="238" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608711750108" />
+    <state width="1330" height="238" key="GridCell.Tab.0.left" timestamp="1608711750108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="816" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608512667254" />
-    <state width="816" height="285" key="GridCell.Tab.0.right" timestamp="1608512667254">
+    <state width="1330" height="238" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608711750108" />
+    <state width="1330" height="238" key="GridCell.Tab.0.right" timestamp="1608711750108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="816" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608512667254" />
-    <state width="816" height="285" key="GridCell.Tab.1.bottom" timestamp="1608512667255">
+    <state width="1330" height="238" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608711750108" />
+    <state width="1330" height="238" key="GridCell.Tab.1.bottom" timestamp="1608711750108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="816" height="285" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608512667255" />
-    <state width="816" height="285" key="GridCell.Tab.1.center" timestamp="1608512667254">
+    <state width="1330" height="238" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608711750108" />
+    <state width="1330" height="238" key="GridCell.Tab.1.center" timestamp="1608711750108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="816" height="285" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608512667254" />
-    <state width="816" height="285" key="GridCell.Tab.1.left" timestamp="1608512667254">
+    <state width="1330" height="238" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608711750108" />
+    <state width="1330" height="238" key="GridCell.Tab.1.left" timestamp="1608711750108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="816" height="285" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608512667254" />
-    <state width="816" height="285" key="GridCell.Tab.1.right" timestamp="1608512667255">
+    <state width="1330" height="238" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608711750108" />
+    <state width="1330" height="238" key="GridCell.Tab.1.right" timestamp="1608711750108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="816" height="285" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608512667255" />
+    <state width="1330" height="238" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608711750108" />
     <state width="1293" height="279" key="GridCell.Tab.2.bottom" timestamp="1607501166644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -466,10 +493,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1293" height="279" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607501166644" />
-    <state x="652" y="188" width="1268" height="526" key="IDE.errors.dialog" timestamp="1608174290679">
+    <state x="652" y="188" width="1268" height="526" key="IDE.errors.dialog" timestamp="1608515695946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="652" y="188" width="1268" height="526" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608174290679" />
+    <state x="652" y="188" width="1268" height="526" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608515695946" />
     <state x="490" y="177" key="Maven.ArtifactSearchDialog" timestamp="1607492745430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -482,10 +509,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="343" y="197" width="1087" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608277479395" />
-    <state x="636" y="269" key="Vcs.Push.Dialog.v2" timestamp="1608185399397">
+    <state width="498" height="519" key="SwitcherDM" timestamp="1608691327288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608185399397" />
+    <state width="498" height="519" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1608691327288" />
+    <state x="636" y="269" key="Vcs.Push.Dialog.v2" timestamp="1608513533030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608513533030" />
     <state x="997" y="274" key="new project wizard" timestamp="1608171940470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -494,10 +525,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1070" y="241" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608276702582" />
-    <state x="916" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1608277033515">
+    <state x="916" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1608692764337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="916" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608277033515" />
+    <state x="916" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608692764337" />
     <state x="397" y="274" key="spring file set editor" timestamp="1608173846483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

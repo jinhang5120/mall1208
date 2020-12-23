@@ -3,7 +3,9 @@ package com.jh.mall.product.entity;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.jh.common.valid.AddGroup;
+import com.jh.common.valid.StatusValue;
 import com.jh.common.valid.UpdateGroup;
+import com.jh.common.valid.UpdateStatusGroup;
 import lombok.Data;
 import org.hibernate.validator.constraints.URL;
 
@@ -27,7 +29,7 @@ public class PmsBrandEntity implements Serializable {
 	 */
 	@TableId
 	@Null(message = "brandId必须为空",groups = {AddGroup.class})
-	@NotNull(message = "brandId必须非空",groups = {UpdateGroup.class})
+	@NotNull(message = "brandId必须非空",groups = {UpdateGroup.class, UpdateStatusGroup.class})
 	private Long brandId;
 	/**
 	 * Ʒ
@@ -47,11 +49,13 @@ public class PmsBrandEntity implements Serializable {
 	/**
 	 * 
 	 */
+	@NotNull(groups = UpdateStatusGroup.class)
+	@StatusValue(message = "showstatus wrong",groups = {AddGroup.class,UpdateStatusGroup.class})
 	private Integer showStatus;
 	/**
 	 * 
 	 */
-	@Pattern(regexp = "/^[a-zA-Z]/",message = "首字母不对")
+	@Pattern(regexp = "^[a-zA-Z]",message = "首字母不对")
 	@NotNull(groups = {AddGroup.class})
 	private String firstLetter;
 	/**

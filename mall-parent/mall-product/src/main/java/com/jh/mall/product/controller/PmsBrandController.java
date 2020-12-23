@@ -3,6 +3,7 @@ package com.jh.mall.product.controller;
 import com.jh.common.utils.PageUtils;
 import com.jh.common.utils.R;
 import com.jh.common.valid.AddGroup;
+import com.jh.common.valid.UpdateGroup;
 import com.jh.mall.product.entity.PmsBrandEntity;
 import com.jh.mall.product.service.PmsBrandService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ import java.util.Map;
  * @date 2020-12-09 11:42:32
  */
 @RestController
-@RequestMapping("product/pmsbrand")
+@RequestMapping("product/brand")
 public class PmsBrandController {
     @Autowired
     private PmsBrandService pmsBrandService;
@@ -48,7 +49,7 @@ public class PmsBrandController {
     public R info(@PathVariable("brandId") Long brandId){
 		PmsBrandEntity pmsBrand = pmsBrandService.getById(brandId);
 
-        return R.ok().put("pmsBrand", pmsBrand);
+        return R.ok().put("brand", pmsBrand);
     }
 
     /**
@@ -75,7 +76,15 @@ public class PmsBrandController {
      */
     @RequestMapping("/update")
     //@RequiresPermissions("product:pmsbrand:update")
-    public R update(@RequestBody PmsBrandEntity pmsBrand){
+    public R update(@Validated(value = {UpdateGroup.class}) @RequestBody PmsBrandEntity pmsBrand){
+//        pmsBrandService.updateById(pmsBrand);
+        pmsBrandService.updateDetail(pmsBrand);//跟新品牌id也要更新关联的其他数据库中的数据
+
+        return R.ok();
+    }
+    @RequestMapping("/update/status")
+    //@RequiresPermissions("product:pmsbrand:update")
+    public R updateStatus(@RequestBody PmsBrandEntity pmsBrand){
 		pmsBrandService.updateById(pmsBrand);
 
         return R.ok();

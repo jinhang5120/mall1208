@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -60,6 +61,7 @@ public class PmsCategoryEntity implements Serializable {
 	 */
 	private Integer productCount;
 
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)//如果该字段是空，则打包成json数据时就不包含[]
 	@TableField(exist = false)//表明该数据在数据库表中不存在
 	private List<PmsCategoryEntity> children;
 

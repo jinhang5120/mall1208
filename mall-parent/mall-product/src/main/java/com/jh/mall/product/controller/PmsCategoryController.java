@@ -24,7 +24,7 @@ import java.util.List;
  * @date 2020-12-09 11:42:32
  */
 @RestController
-@RequestMapping("product/pmscategory")
+@RequestMapping("product/category")
 public class PmsCategoryController {
     @Autowired
     private PmsCategoryService pmsCategoryService;
@@ -34,8 +34,14 @@ public class PmsCategoryController {
      */
     @RequestMapping("/list/tree")
     //@RequiresPermissions("product:pmscategory:list")
-    public R list(){//以树形结构返回所有数据
+    public R listTree(){//以树形结构返回所有数据
         List<PmsCategoryEntity> pmsCategoryEntities = pmsCategoryService.listWithTree();
+        return R.ok().put("pmsCategoryEntities", pmsCategoryEntities);
+    }
+    @RequestMapping("/list")
+    //@RequiresPermissions("product:pmscategory:list")
+    public R list(){//以树形结构返回所有数据
+        List<PmsCategoryEntity> pmsCategoryEntities = pmsCategoryService.list();
         return R.ok().put("pmsCategoryEntities", pmsCategoryEntities);
     }
 
@@ -48,7 +54,7 @@ public class PmsCategoryController {
     public R info(@PathVariable("catId") Long catId){
 		PmsCategoryEntity pmsCategory = pmsCategoryService.getById(catId);
 
-        return R.ok().put("pmsCategory", pmsCategory);
+        return R.ok().put("data", pmsCategory);
     }
 
     /**
@@ -68,7 +74,8 @@ public class PmsCategoryController {
     @RequestMapping("/update")
     //@RequiresPermissions("product:pmscategory:update")
     public R update(@RequestBody PmsCategoryEntity pmsCategory){
-		pmsCategoryService.updateById(pmsCategory);
+//		pmsCategoryService.updateById(pmsCategory);
+		pmsCategoryService.updateDetail(pmsCategory);
         return R.ok();
     }
     @RequestMapping("/update/sort")

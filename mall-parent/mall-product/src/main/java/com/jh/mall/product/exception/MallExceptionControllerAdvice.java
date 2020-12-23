@@ -27,7 +27,7 @@ public class MallExceptionControllerAdvice {
     //统一处理所有异常
     @ExceptionHandler(value = Exception.class)
     public R handleException(Throwable throwable){
-        System.out.println("throwable.getMessage() = " + throwable.getMessage());
+        System.out.println("+++++++++++throwable.getMessage() = " + throwable.getMessage());
         return R.error(BizCodeEnum.UNKNOWN_EXCEPTION.getCode(),BizCodeEnum.UNKNOWN_EXCEPTION.getMessage());
     }
 }

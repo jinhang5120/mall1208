@@ -3,6 +3,8 @@ package com.jh.mall.product.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.jh.common.utils.PageUtils;
 import com.jh.mall.product.entity.PmsAttrEntity;
+import com.jh.mall.product.vo.AttrRespVo;
+import com.jh.mall.product.vo.AttrVo;
 
 import java.util.Map;
 
@@ -16,5 +18,11 @@ import java.util.Map;
 public interface PmsAttrService extends IService<PmsAttrEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    void saveAttrVo(AttrVo attrVo);
+
+    PageUtils queryPage(Map<String, Object> params, Long catId);
+
+    AttrRespVo getInfoById(Long attrId);
 }
 
