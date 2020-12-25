@@ -3,6 +3,7 @@ package com.jh.mall.product.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.jh.common.utils.PageUtils;
 import com.jh.mall.product.entity.PmsSpuInfoEntity;
+import com.jh.mall.product.vo.SpuSaveVo;
 
 import java.util.Map;
 
@@ -16,5 +17,7 @@ import java.util.Map;
 public interface PmsSpuInfoService extends IService<PmsSpuInfoEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    void saveSpuInfo(SpuSaveVo spuSaveVo);
 }
 

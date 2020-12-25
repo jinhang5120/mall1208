@@ -3,6 +3,9 @@ package com.jh.mall.product.dao;
 import com.jh.mall.product.entity.PmsAttrAttrgroupRelationEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * 
@@ -13,5 +16,6 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface PmsAttrAttrgroupRelationDao extends BaseMapper<PmsAttrAttrgroupRelationEntity> {
-	
+
+    void deleteBatchByAttrIdAndAttrGroupId(@Param("entities") List<PmsAttrAttrgroupRelationEntity> pmsAttrAttrgroupRelationEntities);
 }

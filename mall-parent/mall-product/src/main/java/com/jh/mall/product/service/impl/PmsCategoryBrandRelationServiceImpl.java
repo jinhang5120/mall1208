@@ -7,17 +7,18 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jh.common.utils.PageUtils;
 import com.jh.common.utils.Query;
 import com.jh.mall.product.dao.PmsCategoryBrandRelationDao;
-import com.jh.mall.product.entity.PmsBrandEntity;
 import com.jh.mall.product.entity.PmsCategoryBrandRelationEntity;
-import com.jh.mall.product.entity.PmsCategoryEntity;
 import com.jh.mall.product.service.PmsBrandService;
 import com.jh.mall.product.service.PmsCategoryBrandRelationService;
 import com.jh.mall.product.service.PmsCategoryService;
+import com.jh.mall.product.vo.BrandRespVo;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 
 @Service("pmsCategoryBrandRelationService")
@@ -44,8 +45,8 @@ public class PmsCategoryBrandRelationServiceImpl extends ServiceImpl<PmsCategory
     PmsBrandService pmsBrandService;
     @Override
     public void saveDetail(PmsCategoryBrandRelationEntity pmsCategoryBrandRelation) {
-        pmsCategoryBrandRelation.setCatelogName(pmsCategoryService.getById(new QueryWrapper<PmsCategoryEntity>().eq("cat_id",pmsCategoryBrandRelation.getCatelogId())).getName());
-        pmsCategoryBrandRelation.setBrandName(pmsBrandService.getById(new QueryWrapper<PmsBrandEntity>().eq("brand_id",pmsCategoryBrandRelation.getBrandId())).getName());
+        pmsCategoryBrandRelation.setCatelogName(pmsCategoryService.getById(pmsCategoryBrandRelation.getCatelogId()).getName());
+        pmsCategoryBrandRelation.setBrandName(pmsBrandService.getById(pmsCategoryBrandRelation.getBrandId()).getName());
         this.save(pmsCategoryBrandRelation);
     }
 
@@ -60,5 +61,26 @@ public class PmsCategoryBrandRelationServiceImpl extends ServiceImpl<PmsCategory
     @Override
     public void updateCategory(Long catId, String name) {
         this.baseMapper.updateCategory(catId,name);
+    }
+
+    @Override
+    public List<BrandRespVo> brandsList(Long catId) {
+        List<PmsCategoryBrandRelationEntity> pmsCategoryBrandRelationEntities = this.list(new QueryWrapper<PmsCategoryBrandRelationEntity>().eq("catelog_id", catId));
+        if(pmsCategoryBrandRelationEntities.size()>0){
+            List<Long> brandIds = pmsCategoryBrandRelationEntities
+                    .stream()
+                    .map(PmsCategoryBrandRelationEntity::getBrandId)
+                    .collect(Collectors.toList());
+            if(brandIds.size()>0){
+                return pmsBrandService.listByIds(brandIds)
+                        .stream()
+                        .map(item->{
+                            BrandRespVo brandRespVo = new BrandRespVo();
+                            BeanUtils.copyProperties(item,brandRespVo);
+                            return brandRespVo;
+                        }).collect(Collectors.toList());
+            }
+        }
+        return null;
     }
 }

@@ -1,20 +1,16 @@
 package com.jh.mall.member.controller;
 
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.mall.member.entity.UmsMemberLevelEntity;
+import com.jh.mall.member.service.UmsMemberLevelService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.member.entity.UmsMemberLevelEntity;
-import com.jh.mall.member.service.UmsMemberLevelService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
 
 
 
@@ -26,7 +22,7 @@ import com.jh.common.utils.R;
  * @date 2020-12-09 15:06:47
  */
 @RestController
-@RequestMapping("member/umsmemberlevel")
+@RequestMapping("member/memberlevel")
 public class UmsMemberLevelController {
     @Autowired
     private UmsMemberLevelService umsMemberLevelService;

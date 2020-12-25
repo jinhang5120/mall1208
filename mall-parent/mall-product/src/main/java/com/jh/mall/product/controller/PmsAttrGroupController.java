@@ -4,10 +4,14 @@ import com.jh.common.utils.PageUtils;
 import com.jh.common.utils.R;
 import com.jh.mall.product.entity.PmsAttrGroupEntity;
 import com.jh.mall.product.service.PmsAttrGroupService;
+import com.jh.mall.product.service.PmsAttrService;
+import com.jh.mall.product.vo.AttrGroupRelationVo;
+import com.jh.mall.product.vo.AttrGroupWithAttrsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -30,6 +34,35 @@ public class PmsAttrGroupController {
     /**
      * 列表
      */
+    @RequestMapping("/{attrGroupId}/attr/relation")
+    public R attrRelationSelect(@PathVariable("attrGroupId") Long attrGroupId){
+        return R.ok().put("data",pmsAttrGroupService.attrRelation(attrGroupId));
+    }
+    @RequestMapping("/attr/relation/delete")
+    public R attrRelationDelete(@RequestBody AttrGroupRelationVo[] attrGroupRelationVos){
+        pmsAttrGroupService.deleteRelation(attrGroupRelationVos);
+        return R.ok();
+    }
+    @Autowired
+    PmsAttrService pmsAttrService;
+    @RequestMapping("/{attrGroupId}/noattr/relation")
+    //@RequiresPermissions("product:pmsattrgroup:list")
+    public R noRelationAtrr(@RequestParam Map<String, Object> params,@PathVariable("attrGroupId") Long attrGroupId){
+        PageUtils page = pmsAttrService.queryNoRelationAtrr(params,attrGroupId);
+        return R.ok().put("page", page);
+    }
+    @RequestMapping("/attr/relation")
+    public R saveAttrRelation(@RequestBody AttrGroupRelationVo[] attrGroupRelationVos){
+        pmsAttrGroupService.saveAttrRelation(attrGroupRelationVos);
+        return R.ok();
+    }
+    @RequestMapping("/{catelogId}/withattr")
+    public R catelogIdWithAttr(@PathVariable("catelogId") Long catelogId){
+        List<AttrGroupWithAttrsVo> data = pmsAttrGroupService.catelogIdWithAttr(catelogId);
+        return R.ok().put("data",data);
+    }
+
+
     @RequestMapping("/list")
     //@RequiresPermissions("product:pmsattrgroup:list")
     public R list(@RequestParam Map<String, Object> params){

@@ -4,6 +4,7 @@ import com.jh.common.utils.PageUtils;
 import com.jh.common.utils.R;
 import com.jh.mall.product.entity.PmsCategoryBrandRelationEntity;
 import com.jh.mall.product.service.PmsCategoryBrandRelationService;
+import com.jh.mall.product.vo.BrandRespVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -37,6 +38,12 @@ public class PmsCategoryBrandRelationController {
         PageUtils page = pmsCategoryBrandRelationService.queryPage(params);
 
         return R.ok().put("page", page);
+    }
+    @RequestMapping("/brands/list")
+    //@RequiresPermissions("product:pmscategorybrandrelation:list")
+    public R brandsList(@RequestParam(value = "catId",required = true) Long catId){
+        List<BrandRespVo> data = pmsCategoryBrandRelationService.brandsList(catId);
+        return R.ok().put("data", data);
     }
     @GetMapping("/catelog/list")
     //@RequiresPermissions("product:pmscategorybrandrelation:list")

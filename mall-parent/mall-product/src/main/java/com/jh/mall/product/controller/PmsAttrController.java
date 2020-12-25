@@ -2,7 +2,6 @@ package com.jh.mall.product.controller;
 
 import com.jh.common.utils.PageUtils;
 import com.jh.common.utils.R;
-import com.jh.mall.product.entity.PmsAttrEntity;
 import com.jh.mall.product.service.PmsAttrService;
 import com.jh.mall.product.vo.AttrRespVo;
 import com.jh.mall.product.vo.AttrVo;
@@ -39,10 +38,10 @@ public class PmsAttrController {
 
         return R.ok().put("page", page);
     }
-    @RequestMapping("/base/list/{catId}")//restful传参不能用${}
+    @RequestMapping("/{attrType}/list/{catId}")//restful传参不能用${}
     //@RequiresPermissions("product:pmsattr:list")
-    public R baseList(@RequestParam Map<String, Object> params,@PathVariable("catId") Long catId){
-        PageUtils page = pmsAttrService.queryPage(params,catId);
+    public R baseList(@RequestParam Map<String, Object> params,@PathVariable("catId") Long catId,@PathVariable("attrType") String attrType){
+        PageUtils page = pmsAttrService.queryPage(params,catId,attrType);
         return R.ok().put("page", page);
     }
 
@@ -74,8 +73,9 @@ public class PmsAttrController {
      */
     @RequestMapping("/update")
     //@RequiresPermissions("product:pmsattr:update")
-    public R update(@RequestBody PmsAttrEntity pmsAttr){
-		pmsAttrService.updateById(pmsAttr);
+    public R update(@RequestBody AttrVo attrVo){
+//		pmsAttrService.updateById(pmsAttr);
+		pmsAttrService.updateAttrVoById(attrVo);
 
         return R.ok();
     }

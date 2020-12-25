@@ -1,20 +1,17 @@
 package com.jh.mall.product.controller;
 
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.mall.product.entity.PmsSpuInfoEntity;
+import com.jh.mall.product.service.PmsSpuInfoService;
+import com.jh.mall.product.vo.SpuSaveVo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.product.entity.PmsSpuInfoEntity;
-import com.jh.mall.product.service.PmsSpuInfoService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
 
 
 
@@ -26,7 +23,7 @@ import com.jh.common.utils.R;
  * @date 2020-12-09 11:42:32
  */
 @RestController
-@RequestMapping("product/pmsspuinfo")
+@RequestMapping("product/spuinfo")
 public class PmsSpuInfoController {
     @Autowired
     private PmsSpuInfoService pmsSpuInfoService;
@@ -57,11 +54,17 @@ public class PmsSpuInfoController {
     /**
      * 保存
      */
-    @RequestMapping("/save")
+/*    @RequestMapping("/save")
     //@RequiresPermissions("product:pmsspuinfo:save")
     public R save(@RequestBody PmsSpuInfoEntity pmsSpuInfo){
 		pmsSpuInfoService.save(pmsSpuInfo);
 
+        return R.ok();
+    }*/
+    @RequestMapping("/save")
+    //@RequiresPermissions("product:pmsspuinfo:save")
+    public R saveSpuInfo(@RequestBody SpuSaveVo spuSaveVo){//此处要进行校验
+        pmsSpuInfoService.saveSpuInfo(spuSaveVo);
         return R.ok();
     }
 

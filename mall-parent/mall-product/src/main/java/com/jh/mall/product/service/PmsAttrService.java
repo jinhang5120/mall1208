@@ -21,8 +21,12 @@ public interface PmsAttrService extends IService<PmsAttrEntity> {
 
     void saveAttrVo(AttrVo attrVo);
 
-    PageUtils queryPage(Map<String, Object> params, Long catId);
+    PageUtils queryPage(Map<String, Object> params, Long catId,String attrType);
 
     AttrRespVo getInfoById(Long attrId);
+
+    void updateAttrVoById(AttrVo attrVo);
+
+    PageUtils queryNoRelationAtrr(Map<String, Object> params, Long attrGroupId);
 }
 

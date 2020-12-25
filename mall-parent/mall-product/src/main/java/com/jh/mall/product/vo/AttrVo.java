@@ -17,6 +17,7 @@ public class AttrVo implements Serializable {//可以直接继承
     private Long enable;
     private Long catelogId;
     private Integer showDesc;
+    private Integer valueType;
     //额外增添的属性，用于接收前端的数据
     private Long attrGroupId;
 }
