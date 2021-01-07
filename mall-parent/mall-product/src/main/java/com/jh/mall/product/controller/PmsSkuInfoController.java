@@ -1,20 +1,16 @@
 package com.jh.mall.product.controller;
 
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.mall.product.entity.PmsSkuInfoEntity;
+import com.jh.mall.product.service.PmsSkuInfoService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.product.entity.PmsSkuInfoEntity;
-import com.jh.mall.product.service.PmsSkuInfoService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
 
 
 
@@ -26,7 +22,7 @@ import com.jh.common.utils.R;
  * @date 2020-12-09 11:42:32
  */
 @RestController
-@RequestMapping("product/pmsskuinfo")
+@RequestMapping("product/skuinfo")
 public class PmsSkuInfoController {
     @Autowired
     private PmsSkuInfoService pmsSkuInfoService;
@@ -37,8 +33,8 @@ public class PmsSkuInfoController {
     @RequestMapping("/list")
     //@RequiresPermissions("product:pmsskuinfo:list")
     public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = pmsSkuInfoService.queryPage(params);
-
+//        PageUtils page = pmsSkuInfoService.queryPage(params);
+        PageUtils page = pmsSkuInfoService.queryPageByCondition(params);
         return R.ok().put("page", page);
     }
 

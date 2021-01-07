@@ -22,6 +22,7 @@
         <module>util-service</module>
         <module>util-distribution</module>
         <module>mall-thirdparty</module>
+        <module>mall-search</module>
     </modules>
     <packaging>pom</packaging>
 

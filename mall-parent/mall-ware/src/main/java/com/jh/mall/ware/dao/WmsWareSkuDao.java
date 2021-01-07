@@ -3,6 +3,7 @@ package com.jh.mall.ware.dao;
 import com.jh.mall.ware.entity.WmsWareSkuEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * 商品库存
@@ -13,5 +14,6 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface WmsWareSkuDao extends BaseMapper<WmsWareSkuEntity> {
-	
+
+    Long hasStock(@Param("skuId") Long skuId);
 }

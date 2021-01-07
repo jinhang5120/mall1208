@@ -1,20 +1,18 @@
 package com.jh.mall.coupon.controller;
 
+import com.jh.common.TO.MemberPriceTo;
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.mall.coupon.entity.SmsMemberPriceEntity;
+import com.jh.mall.coupon.service.SmsMemberPriceService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.coupon.entity.SmsMemberPriceEntity;
-import com.jh.mall.coupon.service.SmsMemberPriceService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
 
 
 
@@ -26,7 +24,7 @@ import com.jh.common.utils.R;
  * @date 2020-12-09 14:51:31
  */
 @RestController
-@RequestMapping("coupon/smsmemberprice")
+@RequestMapping("coupon/memberprice")
 public class SmsMemberPriceController {
     @Autowired
     private SmsMemberPriceService smsMemberPriceService;
@@ -65,6 +63,11 @@ public class SmsMemberPriceController {
         return R.ok();
     }
 
+    @RequestMapping("/save/MemberPriceTo")
+    R saveBatchMemberPriceTo(@RequestBody List<MemberPriceTo> memberPriceTos){
+        smsMemberPriceService.saveBatchMemberPriceTo(memberPriceTos);
+        return R.ok();
+    }
     /**
      * 修改
      */

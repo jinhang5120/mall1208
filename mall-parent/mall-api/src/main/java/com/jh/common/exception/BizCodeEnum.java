@@ -3,7 +3,8 @@ package com.jh.common.exception;
 //统一返回状态码
 public enum BizCodeEnum {
     UNKNOWN_EXCEPTION(10000, "未知错误"), //注意：逗号不要漏掉
-    VALID_EXCEPTION(10001,"参数格式校验失败");
+    VALID_EXCEPTION(10001,"参数格式校验失败"),
+    PRODUCT_UP_EXCEPTION(11000,"商品上架错误");
     private int code;
     private String message;
 

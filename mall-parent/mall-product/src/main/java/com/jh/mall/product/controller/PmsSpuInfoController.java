@@ -34,8 +34,8 @@ public class PmsSpuInfoController {
     @RequestMapping("/list")
     //@RequiresPermissions("product:pmsspuinfo:list")
     public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = pmsSpuInfoService.queryPage(params);
-
+//        PageUtils page = pmsSpuInfoService.queryPage(params);
+        PageUtils page = pmsSpuInfoService.queryPageByCondition(params);
         return R.ok().put("page", page);
     }
 
@@ -89,5 +89,9 @@ public class PmsSpuInfoController {
 
         return R.ok();
     }
-
+    @RequestMapping("/{spuId}/up")
+    public R up(@PathVariable("spuId") Long spuId){
+        pmsSpuInfoService.up(spuId);
+        return R.ok();
+    }
 }

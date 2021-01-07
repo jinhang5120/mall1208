@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" filepath="$PROJECT_DIR$/mall-parent/mall-order/mall-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-parent.iml" filepath="$PROJECT_DIR$/mall-parent/mall-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" filepath="$PROJECT_DIR$/mall-parent/mall-product/mall-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-search/mall-search.iml" filepath="$PROJECT_DIR$/mall-parent/mall-search/mall-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-thirdparty/mall-thirdparty.iml" filepath="$PROJECT_DIR$/mall-parent/mall-thirdparty/mall-thirdparty.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" filepath="$PROJECT_DIR$/mall-parent/mall-ware/mall-ware.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mall1208.iml" filepath="$PROJECT_DIR$/.idea/mall1208.iml" />

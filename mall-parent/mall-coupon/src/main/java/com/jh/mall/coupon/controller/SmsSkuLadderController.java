@@ -1,20 +1,17 @@
 package com.jh.mall.coupon.controller;
 
+import com.jh.common.TO.SkuLadderTo;
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.mall.coupon.entity.SmsSkuLadderEntity;
+import com.jh.mall.coupon.service.SmsSkuLadderService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.coupon.entity.SmsSkuLadderEntity;
-import com.jh.mall.coupon.service.SmsSkuLadderService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
 
 
 
@@ -26,7 +23,7 @@ import com.jh.common.utils.R;
  * @date 2020-12-09 14:51:31
  */
 @RestController
-@RequestMapping("coupon/smsskuladder")
+@RequestMapping("coupon/skuladder")
 public class SmsSkuLadderController {
     @Autowired
     private SmsSkuLadderService smsSkuLadderService;
@@ -65,6 +62,11 @@ public class SmsSkuLadderController {
         return R.ok();
     }
 
+    @RequestMapping("/save/SkuLadderTo")
+    R saveSkuLandderTo(@RequestBody SkuLadderTo skuLadderTo){
+        smsSkuLadderService.saveSkuLandderTo(skuLadderTo);
+        return R.ok();
+    }
     /**
      * 修改
      */

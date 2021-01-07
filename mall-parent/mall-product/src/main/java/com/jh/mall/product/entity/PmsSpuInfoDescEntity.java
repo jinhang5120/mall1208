@@ -1,11 +1,11 @@
 package com.jh.mall.product.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
-import lombok.Data;
 
 /**
  * spu
@@ -22,11 +22,8 @@ public class PmsSpuInfoDescEntity implements Serializable {
 	/**
 	 * 
 	 */
-	@TableId
+	@TableId(type = IdType.INPUT)//该主键不是自增的，是手动输入，所以该注释要改
 	private Long spuId;
-	/**
-	 * 
-	 */
 	private String decript;
 
 }

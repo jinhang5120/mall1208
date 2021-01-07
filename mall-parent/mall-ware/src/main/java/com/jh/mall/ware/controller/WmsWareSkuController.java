@@ -1,20 +1,18 @@
 package com.jh.mall.ware.controller;
 
+import com.jh.common.TO.HasStockTo;
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.mall.ware.entity.WmsWareSkuEntity;
+import com.jh.mall.ware.service.WmsWareSkuService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.ware.entity.WmsWareSkuEntity;
-import com.jh.mall.ware.service.WmsWareSkuService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
 
 
 
@@ -26,7 +24,7 @@ import com.jh.common.utils.R;
  * @date 2020-12-09 15:15:05
  */
 @RestController
-@RequestMapping("ware/wmswaresku")
+@RequestMapping("ware/waresku")
 public class WmsWareSkuController {
     @Autowired
     private WmsWareSkuService wmsWareSkuService;
@@ -37,7 +35,7 @@ public class WmsWareSkuController {
     @RequestMapping("/list")
     //@RequiresPermissions("ware:wmswaresku:list")
     public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = wmsWareSkuService.queryPage(params);
+        PageUtils page = wmsWareSkuService.queryPageByCondition(params);
 
         return R.ok().put("page", page);
     }
@@ -87,4 +85,11 @@ public class WmsWareSkuController {
         return R.ok();
     }
 
+    @PostMapping("/hasStock")
+    public R<List<HasStockTo>> hasStock(@RequestBody List<Long> skuIds){
+        List<HasStockTo> hasStockTos = wmsWareSkuService.hasStock(skuIds);
+        R r = R.ok();
+        r.setData(hasStockTos);
+        return r;
+    }
 }

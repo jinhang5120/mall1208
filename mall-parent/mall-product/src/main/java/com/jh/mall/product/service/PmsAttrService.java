@@ -6,6 +6,7 @@ import com.jh.mall.product.entity.PmsAttrEntity;
 import com.jh.mall.product.vo.AttrRespVo;
 import com.jh.mall.product.vo.AttrVo;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -28,5 +29,8 @@ public interface PmsAttrService extends IService<PmsAttrEntity> {
     void updateAttrVoById(AttrVo attrVo);
 
     PageUtils queryNoRelationAtrr(Map<String, Object> params, Long attrGroupId);
+
+    /*找到可检索的id*/
+    List<Long> attrSearchIds(List<Long> attrIds);
 }
 

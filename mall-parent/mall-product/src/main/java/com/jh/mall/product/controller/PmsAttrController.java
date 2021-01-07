@@ -2,13 +2,16 @@ package com.jh.mall.product.controller;
 
 import com.jh.common.utils.PageUtils;
 import com.jh.common.utils.R;
+import com.jh.mall.product.entity.PmsProductAttrValueEntity;
 import com.jh.mall.product.service.PmsAttrService;
+import com.jh.mall.product.service.PmsProductAttrValueService;
 import com.jh.mall.product.vo.AttrRespVo;
 import com.jh.mall.product.vo.AttrVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -91,4 +94,16 @@ public class PmsAttrController {
         return R.ok();
     }
 
+    @Autowired
+    PmsProductAttrValueService pmsProductAttrValueService;
+    @RequestMapping("/base/listforspu/{spuId}")
+    public R baseListForSpu(@PathVariable("spuId") Long spuId){
+        List<PmsProductAttrValueEntity> data = pmsProductAttrValueService.baselistForSpu(spuId);
+        return R.ok().put("data",data);
+    }
+    @RequestMapping("/attr/update/{spuId}")
+    public R attrUpdateBySpuId(@PathVariable("spuId") Long spuId,@RequestBody List<PmsProductAttrValueEntity> pmsProductAttrValueEntities){
+        pmsProductAttrValueService.attrUpdateBySpuId(spuId,pmsProductAttrValueEntities);
+        return R.ok();
+    }
 }

@@ -5,7 +5,6 @@ import com.jh.common.utils.R;
 import com.jh.mall.coupon.entity.SmsCouponEntity;
 import com.jh.mall.coupon.service.SmsCouponService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,14 +26,14 @@ import java.util.Map;
 @RequestMapping("coupon/smscoupon")
 @RefreshScope
 public class SmsCouponController {
-    @Value("${coupon.user.name}")
-    String userName;
-    @Value("${coupon.user.age}")
-    Integer age;
+//    @Value("${coupon.user.name}")
+//    String userName;
+//    @Value("${coupon.user.age}")
+//    Integer age;
 
     @RequestMapping("configTest")
     public R configTest(){
-        return R.ok().put("username",userName).put("age",age);
+        return R.ok()/*.put("username",userName).put("age",age)*/;
     }
 
     @RequestMapping("/member/list")

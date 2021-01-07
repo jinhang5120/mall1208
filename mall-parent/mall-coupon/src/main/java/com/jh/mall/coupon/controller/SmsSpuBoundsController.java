@@ -1,20 +1,17 @@
 package com.jh.mall.coupon.controller;
 
+import com.jh.common.TO.BoundsTo;
+import com.jh.common.utils.PageUtils;
+import com.jh.common.utils.R;
+import com.jh.mall.coupon.entity.SmsSpuBoundsEntity;
+import com.jh.mall.coupon.service.SmsSpuBoundsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.jh.mall.coupon.entity.SmsSpuBoundsEntity;
-import com.jh.mall.coupon.service.SmsSpuBoundsService;
-import com.jh.common.utils.PageUtils;
-import com.jh.common.utils.R;
 
 
 
@@ -26,7 +23,7 @@ import com.jh.common.utils.R;
  * @date 2020-12-09 14:51:31
  */
 @RestController
-@RequestMapping("coupon/smsspubounds")
+@RequestMapping("coupon/spubounds")
 public class SmsSpuBoundsController {
     @Autowired
     private SmsSpuBoundsService smsSpuBoundsService;
@@ -62,6 +59,12 @@ public class SmsSpuBoundsController {
     public R save(@RequestBody SmsSpuBoundsEntity smsSpuBounds){
 		smsSpuBoundsService.save(smsSpuBounds);
 
+        return R.ok();
+    }
+    @RequestMapping("/save/BoundsTo")
+    //@RequiresPermissions("coupon:smsspubounds:save")
+    public R save(@RequestBody BoundsTo boundsTo){
+        smsSpuBoundsService.save(boundsTo);
         return R.ok();
     }
 
